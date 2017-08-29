@@ -1,0 +1,185 @@
+@import "variables";
+@import "mixins";
+
+.more_features {
+	width: 100%;
+	padding: 0 .625rem;
+	margin-bottom: .125rem;
+	.clearfix();
+
+	h2 {
+		line-height: 1.1428;
+		text-align: center;
+		margin-bottom: .625rem;
+	}
+	h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
+		line-height: 1.25;
+		margin-bottom: .625rem;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: .875rem;
+		margin: 0 0 .625rem;
+	}
+	.feature_items {
+		padding-top: 1.25rem;
+	}
+	.feature_item {
+		width: 100%;
+		margin-bottom: 1.25rem;
+	}
+	.icon {
+		display: block;
+		width: 21px;
+		height: 21px;
+		margin-bottom: .3125rem;
+		overflow: hidden;
+		background: url('../images/sprite.png') no-repeat;
+		text-indent: -9999px;
+		background-size: 95px 105px;
+
+		&.icon_appointment {
+			background-position: 0 0;
+		}
+		&.icon_pricing {
+			background-position: -21px 0;
+		}
+		&.icon_parallax {
+			background-position: -42px 0;
+		}
+		&.icon_slider {
+			background-position: -63px 0;
+		}
+		&.icon_menu {
+			background-position: 0 -21px;
+		}
+		&.icon_theme {
+			background-position: -21px -21px;
+		}
+		&.icon_gmap {
+			background-position: -42px -21px;
+		}
+		&.icon_gfonts {
+			background-position: -63px -21px;
+		}
+		&.icon_search {
+			background-position: 0 -42px;
+		}
+		&.icon_form {
+			background-position: -21px -42px;
+		}
+		&.icon_newsletter {
+			background-position: -42px -42px;
+		}
+		&.icon_social {
+			background-position: -63px -42px;
+		}
+		&.icon_ui {
+			background-position: 0 -63px;
+		}
+		&.icon_coding {
+			background-position: -21px -63px;
+		}
+		&.icon_chat {
+			width: 23px;
+			background-position: -42px -63px;
+		}
+		&.icon_portfolio {
+			background-position: -65px -63px;
+		}
+	}
+}
+
+@media(@tablet) {
+	.more_features {
+		h3 {
+			font-size: 1.5rem;
+		}
+		p {
+			font-size: 1rem;
+		}
+
+		.feature_item {
+			display: inline-block;
+			vertical-align: top;
+			width: 50%;
+			padding: 0 .625rem;
+			margin-right: -4px;
+		}
+
+		.icon {
+			width: 42px;
+			height: 42px;
+			background-size: 190px 210px;
+
+			&.icon_appointment {
+				background-position: 0 0;
+			}
+			&.icon_pricing {
+				background-position: -42px 0;
+			}
+			&.icon_parallax {
+				background-position: -84px 0;
+			}
+			&.icon_slider {
+				background-position: -126px 0;
+			}
+			&.icon_menu {
+				background-position: 0 -42px;
+			}
+			&.icon_theme {
+				background-position: -42px -42px;
+			}
+			&.icon_gmap {
+				background-position: -84px -42px;
+			}
+			&.icon_gfonts {
+				background-position: -126px -42px;
+			}
+			&.icon_search {
+				background-position: 0 -84px;
+			}
+			&.icon_form {
+				background-position: -42px -84px;
+			}
+			&.icon_newsletter {
+				background-position: -84px -84px;
+			}
+			&.icon_social {
+				background-position: -126px -84px;
+			}
+			&.icon_ui {
+				background-position: 0 -126px;
+			}
+			&.icon_coding {
+				background-position: -42px -126px;
+			}
+			&.icon_chat {
+				width: 45px;
+				background-position: -84px -126px;
+			}
+			&.icon_portfolio {
+				background-position: -129px -126px;
+			}
+		}
+	}
+}
+
+@media(@desktop) {
+	.more_features {
+		max-width: 75rem;
+		padding: 0;
+		margin: 0 auto 2rem;
+
+		h2 {
+			font-size: 3.5rem;
+			margin-bottom: 0.5em;
+		}
+		.feature_item {
+			width: 25%;
+			padding: 0 1rem;
+		}
+	}
+}

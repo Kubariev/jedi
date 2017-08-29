@@ -1,0 +1,103 @@
+.main_slider {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.main_slider::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.main_slider .slider_photo img {
+  display: block;
+  max-width: 100%;
+}
+.main_slider .slider_description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+}
+.main_slider h1 {
+  line-height: 1.25;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  margin-bottom: 0;
+}
+.main_slider .bx-viewport {
+  z-index: 1;
+}
+.main_slider .bx-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 .625rem;
+  margin-top: -0.5rem;
+  width: 100%;
+  z-index: 2;
+}
+.main_slider .bx-prev,
+.main_slider .bx-next {
+  font-size: 0;
+  display: block;
+  width: 2rem;
+  position: relative;
+  height: 1rem;
+  cursor: pointer;
+  text-align: right;
+}
+.main_slider .bx-prev::before,
+.main_slider .bx-next::before {
+  display: inline-block;
+  vertical-align: top;
+  content: '';
+  width: 1.5rem;
+  margin-top: .4375rem;
+  height: .125rem;
+  background: #fff;
+}
+.main_slider .bx-prev::after,
+.main_slider .bx-next::after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 0;
+  height: 0;
+}
+.main_slider .bx-prev {
+  float: left;
+}
+.main_slider .bx-prev::after {
+  left: 0;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+  border-right: 0.75rem solid #fff;
+}
+.main_slider .bx-next {
+  float: right;
+  text-align: left;
+}
+.main_slider .bx-next::after {
+  right: 0;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+  border-left: 0.75rem solid #fff;
+}
+@media (min-width: 768px) {
+  .main_slider {
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .main_slider {
+    max-width: 75rem;
+    margin: 0 auto 4rem;
+    border-bottom: 1.5rem solid #f4f4f4;
+  }
+}

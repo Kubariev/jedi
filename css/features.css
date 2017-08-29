@@ -1,0 +1,176 @@
+.more_features {
+  width: 100%;
+  padding: 0 .625rem;
+  margin-bottom: .125rem;
+}
+.more_features::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.more_features h2 {
+  line-height: 1.1428;
+  text-align: center;
+  margin-bottom: .625rem;
+}
+.more_features h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: .625rem;
+  text-transform: uppercase;
+}
+.more_features p {
+  font-size: .875rem;
+  margin: 0 0 .625rem;
+}
+.more_features .feature_items {
+  padding-top: 1.25rem;
+}
+.more_features .feature_item {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+.more_features .icon {
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-bottom: .3125rem;
+  overflow: hidden;
+  background: url('../images/sprite.png') no-repeat;
+  text-indent: -9999px;
+  background-size: 95px 105px;
+}
+.more_features .icon.icon_appointment {
+  background-position: 0 0;
+}
+.more_features .icon.icon_pricing {
+  background-position: -21px 0;
+}
+.more_features .icon.icon_parallax {
+  background-position: -42px 0;
+}
+.more_features .icon.icon_slider {
+  background-position: -63px 0;
+}
+.more_features .icon.icon_menu {
+  background-position: 0 -21px;
+}
+.more_features .icon.icon_theme {
+  background-position: -21px -21px;
+}
+.more_features .icon.icon_gmap {
+  background-position: -42px -21px;
+}
+.more_features .icon.icon_gfonts {
+  background-position: -63px -21px;
+}
+.more_features .icon.icon_search {
+  background-position: 0 -42px;
+}
+.more_features .icon.icon_form {
+  background-position: -21px -42px;
+}
+.more_features .icon.icon_newsletter {
+  background-position: -42px -42px;
+}
+.more_features .icon.icon_social {
+  background-position: -63px -42px;
+}
+.more_features .icon.icon_ui {
+  background-position: 0 -63px;
+}
+.more_features .icon.icon_coding {
+  background-position: -21px -63px;
+}
+.more_features .icon.icon_chat {
+  width: 23px;
+  background-position: -42px -63px;
+}
+.more_features .icon.icon_portfolio {
+  background-position: -65px -63px;
+}
+@media (min-width: 768px) {
+  .more_features h3 {
+    font-size: 1.5rem;
+  }
+  .more_features p {
+    font-size: 1rem;
+  }
+  .more_features .feature_item {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 .625rem;
+    margin-right: -4px;
+  }
+  .more_features .icon {
+    width: 42px;
+    height: 42px;
+    background-size: 190px 210px;
+  }
+  .more_features .icon.icon_appointment {
+    background-position: 0 0;
+  }
+  .more_features .icon.icon_pricing {
+    background-position: -42px 0;
+  }
+  .more_features .icon.icon_parallax {
+    background-position: -84px 0;
+  }
+  .more_features .icon.icon_slider {
+    background-position: -126px 0;
+  }
+  .more_features .icon.icon_menu {
+    background-position: 0 -42px;
+  }
+  .more_features .icon.icon_theme {
+    background-position: -42px -42px;
+  }
+  .more_features .icon.icon_gmap {
+    background-position: -84px -42px;
+  }
+  .more_features .icon.icon_gfonts {
+    background-position: -126px -42px;
+  }
+  .more_features .icon.icon_search {
+    background-position: 0 -84px;
+  }
+  .more_features .icon.icon_form {
+    background-position: -42px -84px;
+  }
+  .more_features .icon.icon_newsletter {
+    background-position: -84px -84px;
+  }
+  .more_features .icon.icon_social {
+    background-position: -126px -84px;
+  }
+  .more_features .icon.icon_ui {
+    background-position: 0 -126px;
+  }
+  .more_features .icon.icon_coding {
+    background-position: -42px -126px;
+  }
+  .more_features .icon.icon_chat {
+    width: 45px;
+    background-position: -84px -126px;
+  }
+  .more_features .icon.icon_portfolio {
+    background-position: -129px -126px;
+  }
+}
+@media (min-width: 1025px) {
+  .more_features {
+    max-width: 75rem;
+    padding: 0;
+    margin: 0 auto 2rem;
+  }
+  .more_features h2 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5em;
+  }
+  .more_features .feature_item {
+    width: 25%;
+    padding: 0 1rem;
+  }
+}
